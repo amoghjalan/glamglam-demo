@@ -1,9 +1,7 @@
-import HomeSharpIcon from "@material-ui/icons/HomeSharp";
-import Avatar from "@material-ui/core/Avatar";
-import Paper from "@mui/material/Paper";
-import InputBase from "@mui/material/InputBase";
-import IconButton from "@mui/material/IconButton";
+import Avatar from "@mui/material/Avatar";
 import SearchIcon from "@mui/icons-material/Search";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import userImg from "../assets/currentUser.jpg";
 
 export default function Navbar() {
   return (
@@ -14,16 +12,11 @@ export default function Navbar() {
         </div>
 
         <div className="nav__menu">
-          <Paper component="form">
-            <IconButton type="submit" aria-label="search">
-              <SearchIcon />
-            </IconButton>
-            <InputBase placeholder="  Search" />
-          </Paper>
-          <HomeSharpIcon />
+          <SearchIcon />
+          <NotificationsIcon />
 
           <div className="avatar__menu">
-            <Avatar />
+            <Avatar src={userImg} alt="A" />
           </div>
         </div>
       </div>

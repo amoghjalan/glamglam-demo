@@ -1,12 +1,13 @@
 import "./App.css";
-import Navbar from "./Navbar";
-import Posts from "./Posts";
-import Sidebar from "./Sidebar";
-
+import Navbar from "./components/Navbar";
+import Posts from "./components/Posts";
+import Sidebar from "./components/Sidbar";
+import Stories from "./components/Stories";
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Stories />
       <div className="home__container">
         <Posts />
         <div className="sidebar">
